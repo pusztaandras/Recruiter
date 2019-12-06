@@ -11,20 +11,22 @@ A possible option would be for researchers to offer some kind of remuneration fo
 
 # Project 1 web-application
 First part of the project is to set up a website, in which researchers( and possible participants) could register/log in and track thier study(or performance). The planned functions of the website are:
- ## Sign in/Sign up:
+
+## Sign in/Sign up:
  You can choose to be a researcher who advertise his/her online/offline study, or a participant, who can participate in these studies.
  Different subfunctions will be accessible for the the two group
  
- ## Researcher:
- ### 1.Upload study for evaluation
- In order to make sure, that the study design is unique and appropriate, researchers must fill out a page, explicitly describing it.
- A template is given for each section to make the evaluation process easier.
- The following sections are requested:
+## Researcher:
+
+### 1.Upload study for evaluation
+In order to make sure, that the study design is unique and appropriate, researchers must fill out a page, explicitly describing it.
+A template is given for each section to make the evaluation process easier.
+The following sections are requested:
  
- #### 1.1 Title
- #### 1.2 Relevance
- #### 1.3 Aims of the study
- #### 1.4 Study procedures
+#### 1.1 Title
+#### 1.2 Relevance
+#### 1.3 Aims of the study
+#### 1.4 Study procedures
  Online: accessible to smartphone-based application to collect data from participants around the world)
  Offline: Study designs, that requires a fixed setup(EEG/MEG/fMRI, etc), accessible to participant around the area.
  In this section the researcher is asked to be as explicit as he/she can. If applicable he/she should upload the behavioral task generated with common toolbox (Eprime/Psychotoolbox, etc).
