@@ -1,0 +1,205 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pictures\2\**" />
+    <Compile Remove="Pictures\3\**" />
+    <Compile Remove="Pictures\4\**" />
+    <Compile Remove="Pictures\5\**" />
+    <EmbeddedResource Remove="Pictures\2\**" />
+    <EmbeddedResource Remove="Pictures\3\**" />
+    <EmbeddedResource Remove="Pictures\4\**" />
+    <EmbeddedResource Remove="Pictures\5\**" />
+    <None Remove="Pictures\2\**" />
+    <None Remove="Pictures\3\**" />
+    <None Remove="Pictures\4\**" />
+    <None Remove="Pictures\5\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pictures\2_1.jpg" />
+    <None Remove="Pictures\2_2.jpg" />
+    <None Remove="Pictures\2_3.jpg" />
+    <None Remove="Pictures\2_4.jpg" />
+    <None Remove="Pictures\2_5.jpg" />
+    <None Remove="Pictures\2_6.jpg" />
+    <None Remove="Pictures\3_1.jpg" />
+    <None Remove="Pictures\3_2.jpg" />
+    <None Remove="Pictures\3_3.jpg" />
+    <None Remove="Pictures\3_4.jpg" />
+    <None Remove="Pictures\3_5.jpg" />
+    <None Remove="Pictures\3_6.jpg" />
+    <None Remove="Pictures\4_1.jpg" />
+    <None Remove="Pictures\4_2.jpg" />
+    <None Remove="Pictures\4_3.jpg" />
+    <None Remove="Pictures\4_4.jpg" />
+    <None Remove="Pictures\4_5.jpg" />
+    <None Remove="Pictures\4_6.jpg" />
+    <None Remove="Pictures\5_1.jpg" />
+    <None Remove="Pictures\5_2.jpg" />
+    <None Remove="Pictures\5_3.jpg" />
+    <None Remove="Pictures\5_4.jpg" />
+    <None Remove="Pictures\5_5.jpg" />
+    <None Remove="Pictures\5_6.jpg" />
+    <None Remove="Pictures\apple.jpg" />
+    <None Remove="Pictures\Background.jpg" />
+    <None Remove="Pictures\banana.jpg" />
+    <None Remove="Pictures\gen_2_1.jpg" />
+    <None Remove="Pictures\gen_2_2.jpg" />
+    <None Remove="Pictures\gen_2_3.jpg" />
+    <None Remove="Pictures\gen_2_4.jpg" />
+    <None Remove="Pictures\gen_2_5.jpg" />
+    <None Remove="Pictures\gen_2_6.jpg" />
+    <None Remove="Pictures\gen_3_1.jpg" />
+    <None Remove="Pictures\gen_3_2.jpg" />
+    <None Remove="Pictures\gen_3_3.jpg" />
+    <None Remove="Pictures\gen_3_4.jpg" />
+    <None Remove="Pictures\gen_3_5.jpg" />
+    <None Remove="Pictures\gen_3_6.jpg" />
+    <None Remove="Pictures\gen_4_1.jpg" />
+    <None Remove="Pictures\gen_4_2.jpg" />
+    <None Remove="Pictures\gen_4_3.jpg" />
+    <None Remove="Pictures\gen_4_4.jpg" />
+    <None Remove="Pictures\gen_4_5.jpg" />
+    <None Remove="Pictures\gen_4_6.jpg" />
+    <None Remove="Pictures\gen_5_1.jpg" />
+    <None Remove="Pictures\gen_5_2.jpg" />
+    <None Remove="Pictures\gen_5_3.jpg" />
+    <None Remove="Pictures\gen_5_4.jpg" />
+    <None Remove="Pictures\gen_5_5.jpg" />
+    <None Remove="Pictures\gen_5_6.jpg" />
+    <None Remove="Pictures\grape.jpg" />
+    <None Remove="Pictures\graue.jpg" />
+    <None Remove="Pictures\No.jpg" />
+    <None Remove="Pictures\pear.jpg" />
+    <None Remove="Pictures\SST\Go.bmp" />
+    <None Remove="Pictures\SST\GoL.bmp" />
+    <None Remove="Pictures\SST\GoR.bmp" />
+    <None Remove="Pictures\SST\High.bmp" />
+    <None Remove="Pictures\SST\Left.bmp" />
+    <None Remove="Pictures\SST\Low.bmp" />
+    <None Remove="Pictures\SST\Right.bmp" />
+    <None Remove="Pictures\SST\Stop.bmp" />
+    <None Remove="Pictures\vege_2.jpg" />
+    <None Remove="Pictures\vege_3.jpg" />
+    <None Remove="Pictures\vege_4.jpg" />
+    <None Remove="Pictures\vege_5.jpg" />
+    <None Remove="Pictures\Yes.bmp" />
+    <None Remove="Pictures\Yes.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\SST\Go.bmp" />
+    <EmbeddedResource Include="Pictures\SST\GoL.bmp" />
+    <EmbeddedResource Include="Pictures\SST\GoR.bmp" />
+    <EmbeddedResource Include="Pictures\SST\High.bmp" />
+    <EmbeddedResource Include="Pictures\SST\Left.bmp" />
+    <EmbeddedResource Include="Pictures\SST\Low.bmp" />
+    <EmbeddedResource Include="Pictures\SST\Right.bmp" />
+    <EmbeddedResource Include="Pictures\SST\Stop.bmp" />
+    <EmbeddedResource Include="Pictures\WM\2_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\2_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\2_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\2_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\2_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\2_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\3_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\4_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\5_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\apple.jpg" />
+    <EmbeddedResource Include="Pictures\WM\Background.jpg" />
+    <EmbeddedResource Include="Pictures\WM\banana.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_2_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_3_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_4_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_1.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\gen_5_6.jpg" />
+    <EmbeddedResource Include="Pictures\WM\grape.jpg" />
+    <EmbeddedResource Include="Pictures\WM\graue.jpg" />
+    <EmbeddedResource Include="Pictures\WM\No.jpg" />
+    <EmbeddedResource Include="Pictures\WM\pear.jpg" />
+    <EmbeddedResource Include="Pictures\WM\vege_2.jpg" />
+    <EmbeddedResource Include="Pictures\WM\vege_3.jpg" />
+    <EmbeddedResource Include="Pictures\WM\vege_4.jpg" />
+    <EmbeddedResource Include="Pictures\WM\vege_5.jpg" />
+    <EmbeddedResource Include="Pictures\WM\Yes.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.68.3" />
+    <PackageReference Include="SkiaSharp.Views" Version="1.68.3" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="SST_Intro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TasksPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TrialPage_SST.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TrialPage_WM.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WMTaskPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WM_Intro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="TrialPage_WM.xaml.cs">
+      <DependentUpon>TrialPage_WM.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

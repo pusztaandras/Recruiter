@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_ProbSST2.WM_Intro"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        
+        <Grid>
+           
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            
+            <Label Text="Welcome!" HorizontalOptions="Center" Grid.Row="0"/>
+            
+            <StackLayout Orientation="Vertical" Grid.Row="1">
+                <Label HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" Text="In the following task you will see a segmented circle like this:"/>
+                <Image x:Name="SegmentedCircle" HorizontalOptions="Center" HeightRequest="50" VerticalOptions="Start" WidthRequest="50"/>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="2">
+                <Label HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" Text="And two fruits above, such as:"/>
+
+                <Image x:Name="FruitImage1"  HeightRequest="50"  VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="50"/>
+                <Image x:Name="FruitImage2" HorizontalOptions="End" HeightRequest="50" VerticalOptions="Start" WidthRequest="50"/>
+            </StackLayout>
+            <Label Grid.Row="3" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" Text="Your job is two decide, which of the two fruit matches with the segmented circle.&#xA;Tap the correct image appearing on the left or the right side of the circle&#xA;The basis of the pairing is only one segment of the circle&#xA;- but you dont know which one.&#xA;Initially you will have to guess, but after getting some feedback on your responses,&#xA;you can figure out the rule.&#xA;If you reached a certain amount of good answers, no feddback will be provided: &#xA;in this phase we are just curious if you can remember the rule by yourself :)&#xA;Try to be as accurate as possible, and as fast as you can!&#xA;Tap anywhere to start" />
+            <Button Grid.Row="4" Text="Start!" Clicked="StartButton_Clicked" HorizontalOptions="Center"/>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="StartButton_Clicked"/>
+            </Grid.GestureRecognizers>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

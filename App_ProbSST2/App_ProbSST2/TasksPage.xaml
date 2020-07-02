@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_ProbSST2.TasksPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Tasks you can choose"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Title" Grid.Row="0" Grid.ColumnSpan="2"/>
+            
+                <Image x:Name="WM_preview" HorizontalOptions="Center" Grid.Column="0" Grid.Row="1" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="WMicon_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            <Label Text="Progressive&#xA;Working memory task" FontSize="Subtitle" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100"/>
+
+
+            <Image x:Name="SST_preview" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" Grid.Row="1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SSTicon_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="Stop Signal Task" FontSize="Subtitle" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

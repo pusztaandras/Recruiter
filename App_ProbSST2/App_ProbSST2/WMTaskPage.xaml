@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_ProbSST2.WMTaskPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Select a level to start" FontSize="Title" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <Image x:Name="level1" HeightRequest="100" WidthRequest="100">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="level1_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Level 1" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Image x:Name="level2" HeightRequest="100" WidthRequest="100">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="level2_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Level 2" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical">
+                    <Image x:Name="level3" HeightRequest="100" WidthRequest="100">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="level3_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Level 3" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Image x:Name="level4" HeightRequest="100" WidthRequest="100">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="level4_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Level 4" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_ProbSST2.TrialPage_WM"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="CuePlace" Grid.Column="1" Grid.Row="0"/>
+
+            <Image x:Name="LeftImage" Grid.Column="0" Grid.Row="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="LeftImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="RightImage" Grid.Column="2" Grid.Row="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RightImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="FeedBackPlace" Grid.Column="1" Grid.Row="2"/>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
